@@ -11,6 +11,10 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/AuthPage.vue'),
       },
       {
+        path: '/pet/:id',
+        component: () => import('pages/PetPage.vue'),
+      },
+      {
         path: '/upload',
         component: () => import('pages/UploadPet.vue'),
       },

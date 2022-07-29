@@ -36,7 +36,9 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <Suspense>
+        <router-view />
+      </Suspense>
     </q-page-container>
   </q-layout>
 </template>

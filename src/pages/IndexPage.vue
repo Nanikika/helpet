@@ -41,7 +41,6 @@ async function onLoad(index: number, done: () => void) {
     limit(LIMIT)
   );
   const documentSnapshots = await getDocs(results);
-  console.log(documentSnapshots);
   if (documentSnapshots.docs.length) {
     lastVisible.value =
       documentSnapshots.docs[documentSnapshots.docs.length - 1];
